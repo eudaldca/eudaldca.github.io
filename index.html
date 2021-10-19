@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="1080, initial-scale=1">
+
     <title>Eudald Cardona</title>
     <!--region Meta-->
     <meta property="og:title" content="Eudald Cardona"/>
@@ -28,19 +29,36 @@
     <!--endregion-->
     <link rel="stylesheet" href="css/styles.css"/> <!-- Icons by FontAwesome ❤ -->
     <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            mousewheelControl: true,
+            slidesPerView: 1,
+        });
+    </script>
 </head>
 <body>
-<div class="center">
-    <img class="avatar" src="assets/avatar.jpg" alt="Photo of Eudald Cardona"/>
-    <div class="text">
-        <p class="name">Hi! I'm Eudald Cardona</p>
-        <p class="about">I'm a web development student at Monlau CE.</p>
+<div class="swiper swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="center">
+                <img class="avatar" src="assets/avatar.jpg" alt="Photo of Eudald Cardona"/>
+                <div class="text">
+                    <p class="name">Hi! I'm Eudald Cardona</p>
+                    <p class="about">I'm a web development student at Monlau CE.</p>
+                </div>
+                <a href="mailto:me@eudald.me"><span class="fas fa-3x fa-envelope icon" title="Email"></span></a>
+                <a href="https://github.com/eudaldca"><span class="fab fa-3x fa-github icon" title="GitHub"></span></a>
+                <a href="https://gitlab.com/eudald"><span class="fab fa-3x fa-gitlab icon" title="GitLab"></span></a>
+                <a href="https://www.linkedin.com/in/eudald-cardona"><span class="fab fa-3x fa-linkedin-in icon"
+                                                                           title="LinkedIn"></span></a>
+            </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
     </div>
-    <a href="mailto:me@eudald.me"><span class="fas fa-3x fa-envelope icon" title="Email"></span></a>
-    <a href="https://github.com/eudaldca"><span class="fab fa-3x fa-github icon" title="GitHub"></span></a>
-    <a href="https://gitlab.com/eudald"><span class="fab fa-3x fa-gitlab icon" title="GitLab"></span></a>
-    <a href="https://www.linkedin.com/in/eudald-cardona"><span class="fab fa-3x fa-linkedin-in icon"
-                                                               title="LinkedIn"></span></a>
 </div>
 </body>
 </html>
