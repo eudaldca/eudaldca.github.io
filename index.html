@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="1080, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <title>Eudald Cardona</title>
     <!--region Meta-->
@@ -29,19 +29,11 @@
     <!--endregion-->
     <link rel="stylesheet" href="css/styles.css"/> <!-- Icons by FontAwesome ❤ -->
     <link href="css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        let swiper = new Swiper('.swiper-container', {
-            direction: 'vertical',
-            mousewheelControl: true,
-            slidesPerView: 1,
-        });
-    </script>
+    <!--    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-<div class="swiper swiper-container">
+<div class="swiper swiperContainer">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="center">
@@ -55,10 +47,20 @@
                 <a href="https://gitlab.com/eudald"><span class="fab fa-3x fa-gitlab icon" title="GitLab"></span></a>
                 <a href="https://www.linkedin.com/in/eudald-cardona"><span class="fab fa-3x fa-linkedin-in icon"
                                                                            title="LinkedIn"></span></a>
+                <span id="" class="fas fa-3x fa-envelope icon" title="Email"></span>
             </div>
         </div>
         <div class="swiper-slide">Slide 2</div>
     </div>
 </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    let swiper = new Swiper('.swiperContainer', {
+            direction: 'vertical',
+            mousewheel: true,
+            slidesPerView: 1,
+        }
+    );
+</script>
 </body>
 </html>
