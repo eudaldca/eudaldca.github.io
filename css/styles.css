@@ -37,31 +37,32 @@ body {
     align-items: center;
 }
 
-
-
-
 .avatar {
     width: 300px;
     border-radius: 500px;
-    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 400px) {
     .avatar {
-        width: 90%;
+        width: 75%;
+    }
+
+    .text {
+        margin-bottom: 0;
     }
 }
 
 p {
-    color: white;
     font-family: Roboto, sans-serif;
 }
 
 .text {
+    color: white;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.5rem;
 }
 
 .name {
@@ -72,7 +73,6 @@ p {
 
 .about {
     font-size: 16px;
-    margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -98,4 +98,20 @@ p {
 
 .icon:hover {
     color: #ff9aa2;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.arrow-down:hover {
+    color: #ff9aa2;
+}
+
+.text-sm {
+    margin-bottom: 0;
+    font-size: 14px;
 }
