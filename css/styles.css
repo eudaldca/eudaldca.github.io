@@ -14,7 +14,7 @@ body {
 }
 
 
-.swiper {
+.swiper-v {
     width: 100%;
     height: 100%;
 }
@@ -50,6 +50,10 @@ body {
 
     .text {
         margin-bottom: 0;
+    }
+
+    .card {
+        width: 50%;
     }
 }
 
@@ -114,4 +118,43 @@ p {
 .text-sm {
     margin-bottom: 0;
     font-size: 14px;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background-color: #313131;
+    overflow: hidden;
+    width: 400px;
+}
+
+.card > img {
+    height: 200px;
+    width: inherit;
+    object-fit: cover;
+}
+
+.card-text {
+    color: white;
+    font-family: Roboto, sans-serif;
+    text-align: left;
+    margin-left: 1rem;
+
+}
+
+h3.card-text {
+    margin-top: 0.5rem;
+}
+
+p.card-text {
+}
+
+.swiper-h {
+    height: 350px;
 }

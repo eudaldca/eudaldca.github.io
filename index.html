@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-<div class="swiper swiperContainer">
+<div class="swiper-v swiperContainer">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="center">
@@ -56,7 +56,47 @@
             </div>
 
         </div>
-        <div class="swiper-slide" id="slide-2">Slide 2</div>
+        <div class="swiper-slide" id="slide-2">
+            <div class="swiper swiperContainer2 swiper-h center">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/sunset.jpg" alt="sunset">
+                            <h3 class="card-text">Lorem ipsum</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                luctus,
+                                velit non efficitur aliquam, ligula dui ultricies turpis, eget vulputate dolor sem vitae
+                                turpis.
+                                Quisque.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/sunset.jpg" alt="sunset">
+                            <h3 class="card-text">Lorem ipsum</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                luctus,
+                                velit non efficitur aliquam, ligula dui ultricies turpis, eget vulputate dolor sem vitae
+                                turpis.
+                                Quisque.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/sunset.jpg" alt="sunset">
+                            <h3 class="card-text">Lorem ipsum</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                luctus,
+                                velit non efficitur aliquam, ligula dui ultricies turpis, eget vulputate dolor sem vitae
+                                turpis.
+                                Quisque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </div>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -66,6 +106,32 @@
             mousewheel: true,
             slidesPerView: 1,
             simulateTouch: false,
+        }
+    );
+    let swiper2 = new Swiper('.swiperContainer2', {
+            direction: 'horizontal',
+            simulateTouch: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 480px
+                520: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                750: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         }
     );
 </script>
